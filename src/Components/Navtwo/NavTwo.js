@@ -39,12 +39,12 @@ const NavTwo = () => {
   <Navlinks className=' hover:text-red-400 z-40'/>
   <div className='flex gap-9 items-center justify-center'>
   <IoIosSearch className=" text-red-500 hover:text-red-800"/>
-  <NavLink to="/cart" className="flex pt-2"><IoCartOutline className=" text-red-500 hover:text-red-800"/> {cartproducts.length>0?cartproducts.length:undefined}</NavLink>
+  <NavLink to="/cart" className="flex "><IoCartOutline className=" text-red-500 hover:text-red-800"/> {cartproducts.length>0?cartproducts.length:undefined}</NavLink>
   </div> 
   </ul>
 {/* mobile nav */}
 <ul className={` pb-0  min-[912px]:hidden absolute z-10 bg-white w-full top-5 h-fit  sm:text-xl bottom-0 py-26 pl-4 duration-500 ${open? "left-0":"left-[-100%]"}`}>
-<li className='pt-24 px-1 inline-block hover:text-red-400 transition ease-in-out duration-300 '>
+<li className='pt-36 px-1 inline-block hover:text-red-400 transition ease-in-out duration-300 '>
    <NavLink to="/" className={'ml-2 hover:text-red-400 '}>Home</NavLink> 
   </li>
   <Navmobile className='min-[912px]:hidden'/>
