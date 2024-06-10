@@ -15,28 +15,29 @@ import ScrollToTop from "react-scroll-to-top";
 
 function App() {
  
-  const[loading,setloading]=useState(false)
+  // const[loading,setloading]=useState(false)
 
-    useEffect(()=>{
-     setloading(true)
-     setTimeout(()=>{
-      setloading(false)
-           },1400)   
-    },[])
+  //   useEffect(()=>{
+  //    setloading(true)
+  //    setTimeout(()=>{
+  //     setloading(false)
+  //          },9400)   
+  //   },[])
  
  
       return (
  
     <>
     <ScrollToTop smooth color="#6f00ff" style={{display:"inline"}}/>
-       {loading?<Loading/>: <Routes>
+      {/* loading?<Loading/>:   */}
+       <Routes>
        <Route path="/" element={<Homecomp />} />
        <Route path='/products' element={<Products />} />
        <Route path='/products/:id' element={<Singlecomp />} />
        <Route path='/cart' element={<Cartcomp />} />
        <Route path='/Login' element={<Login />} />
     
-     </Routes>}
+     </Routes>
        
 
 
