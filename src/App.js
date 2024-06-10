@@ -3,12 +3,8 @@ import "./App.css";
 import Products from "./Components/products/Products";
 import Singlecomp from "./Routes/Singlecomp";
 import Cartcomp from "./Routes/Cartcomp";
-import React, { useEffect, useState } from 'react'
-import Loading from "./Components/Loading page/Loading";
 import Homecomp from "./Routes/Home/Homecomp";
 import Login from "./Components/login/Login";
-import NavTwo from "./Components/Navtwo/NavTwo";
-import Footer from "./footer/Footer";
 import ScrollToTop from "react-scroll-to-top";
 
 
