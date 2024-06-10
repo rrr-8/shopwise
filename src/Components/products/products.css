@@ -60,11 +60,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 250px;
-  height: 400px;
-  padding: 0.8em;
-  border-radius: 7px;
-  position: relative;
+  width: 250px;;
+  height: 400px;;
+  padding: 0.8em;;
+  border-radius: 7px;;
+  position: relative;;
   overflow: visible;
   background-color: #f5faff;
   border: 2px solid #fc9ade;
