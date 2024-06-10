@@ -249,10 +249,10 @@ Link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 350px;
+  width: 530px;
   height: fit-content;
   background-color: burlywood;
-
+margin-top: 18vh;
   border-radius: 7px;
   position: relative;
   overflow: visible;
@@ -279,7 +279,7 @@ Link {
     color: #553f52;
     font-family: "poppins";
     font-size: 1.1rem;
-
+text-align: center;
     font-weight: 800;
   }
   p {
