@@ -124,7 +124,7 @@
     }
     .icons {
       transition: 0.8s;
-      display: flex;
+      display: none;
       
       .btn {
         display: flex;
