@@ -16,7 +16,7 @@ const Products = () => {
       .get("https://fakestoreapi.com/products")
       .then((res) => {
         setproducts(res.data);
-        console.log(res)
+      
       })
       .catch((err) => console.log(err));
   });
