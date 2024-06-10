@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap");
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 30px;
+    color: #553f52;
+    font-family: "poppins";
+    font-weight: 800;
+
+    &:before {
+      content: " ";
+      height: 2px;
+      width: 25px;
+      background: rgb(187, 255, 0);
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+
+    &:after {
+      content: " ";
+      height: 2px;
+      width: 25px;
+      background: rgb(187, 255, 0);
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+    }
+  }
+}
+
+.productscontainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8dvw;
+  transition: 1s;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 400px;
+  padding: 0.8em;
+  border-radius: 7px;
+  position: relative;
+  overflow: visible;
+  background-color: #f5faff;
+  border: 2px solid #fc9ade;
+  border-radius: 20px;
+  padding-bottom: 6vh;
+
+  &:hover {
+    -webkit-box-shadow: 0px 7px 9px 6px rgb(255, 160, 179);
+    -moz-box-shadow: 0px 7px 9px 6px rgb(240, 155, 172);
+    box-shadow: 0px 7px 9px 6px rgb(245, 191, 202);
+    transition: 0.7s;
+    border: none;
+    background-color: white;
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    height: 35%;
+    width: 80%;
+    border-radius: 0.5rem;
+    transition: 0.3s ease;
+    mix-blend-mode: multiply;
+
+    .card:hover & {
+      transform: translateY(-25%);
+      mix-blend-mode: multiply;
+    }
+    .image .content {
+      width: 70px;
+      height: 50px;
+    }
+  }
+
+  /*Text*/
+  .cardinfo {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    .category {
+      display: block;
+      color: black;
+      font-size: 0.7rem;
+      padding: 0 4px;
+      font-weight: 700;
+      top: 0;
+      left: 1;
+      position: absolute;
+      background-color: yellow;
+    }
+    .icons {
+      transition: 0.8s;
+      display: none;
+      .card:hover & {
+        width: 100%;
+        height: 60%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        color: black;
+        font-weight: 900;
+        transition: 0.4s;
+        font-size: 1.5rem;
+        &:hover {
+          color: red;
+          transform: scale(1.4);
+        }
+      }
+      .btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        background: rgb(173, 224, 31);
+
+        border-radius: 7px;
+        font-family: "poppins";
+        color: black;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: capitalize;
+        padding: 8px 18px 10px 18px;
+        text-decoration: none;
+      }
+
+      .btn:hover {
+        background: #fd3ce3;
+        background-image: -webkit-linear-gradient(top, #3cb0fd, #34d976);
+        background-image: -moz-linear-gradient(top, #fd3ccd, #34d976);
+        background-image: -ms-linear-gradient(top, #fd3ced, #34d976);
+        background-image: -o-linear-gradient(top, #fd3cd3, #34d976);
+        background-image: linear-gradient(to bottom, #fd3cc3, #34d976);
+        text-decoration: none;
+      }
+    }
+    .span {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding-top: 2vh;
+      text-align: center;
+    
+      color: rgb(35, 97, 19);
+      font-weight: 800;
+      font-family: "poppins";
+      /* border-top: 2px solid #f5faff; */
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      .card:hover & {
+        display: none;
+      }
+    
+    }
+
+    .card:hover & {
+      transition: 0.2s;
+      background-color: pink;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+  .texttitle {
+    text-align: center;
+    font-weight: 900;
+    font-size: 0.9em;
+    color: black;
+    font-family: "lora";
+    font-weight: 800;
+
+    .card:hover & {
+      display: none;
+    }
+  }
+}
+
+h3 {
+  text-transform: capitalize;
+}
+.cart-h3 {
+  position: relative;
+  top: -20px;
+  padding: 10px !important;
+  background-color: #553f52;
+  color: white !important;
+  display: inline-block;
+  width: fit-content !important;
+  margin: auto;
+  border-radius: 10px;
+  font-size: 1.3rem !important;
+  margin-top: 170px !important;
+
+  span {
+    color: greenyellow;
+  }
+  &:before {
+    width: 0 !important;
+  }
+  &:after {
+    width: 0 !important;
+  }
+}
+Link {
+  cursor: pointer;
+}
+.singleproduct-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: fit-content;
+  background-color: burlywood;
+
+  border-radius: 7px;
+  position: relative;
+  overflow: visible;
+  background-color: #f5faff;
+  border: 2px solid #e9ecef;
+  border-radius: 20px;
+
+  .image {
+    width: 350px;
+    mix-blend-mode: multiply;
+    padding-bottom: 10px;
+
+    margin: auto;
+    padding: 0.8em;
+
+    img {
+      width: 300px;
+      width: 70%;
+      margin: auto;
+    }
+  }
+
+  h4 {
+    color: #553f52;
+    font-family: "poppins";
+    font-size: 1.1rem;
+
+    font-weight: 800;
+  }
+  p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  .cardinfo {
+    padding-left: 10px;
+    background-color: white;
+    height: inherit;
+    border-bottom-left-radius: 6%;
+    border-bottom-right-radius: 6%;
+
+  }
+  .span {
+    text-align: center;
+
+    padding: 10px 0;
+    font-weight: 900;
+    color: rgb(107, 151, 50);
+
+    
+  }
+}
+.icon button {
+  &:hover {
+    color: red !important;
+    margin: auto;
+  }
+}
+
+.star{
+  color: yellow;
+  fill: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .card:hover & {
+    width: 0 !important;
+    display: none !;
+  }
+}

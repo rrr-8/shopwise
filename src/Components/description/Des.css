@@ -1,0 +1,48 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin-top: 10dvh;
+padding: 20px 0;
+
+}
+
+
+
+
+
+
+.one{width:300px;
+    height: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap:3dvh;
+align-items: center;
+box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+
+h6{
+ 
+    font-weight: 800;
+    color: #292b2c;
+    
+    font-family:'poppins';
+}
+
+.icon{display:flex;
+    color: #FF324D;
+    font-size: 2.9rem;
+}
+
+ .text p{
+    color: #3d3b3b;
+    font-size: 12px;
+    
+}
+}
+
+
+@media (max-width:870px) {
+    .main{flex-wrap: wrap;}
+}

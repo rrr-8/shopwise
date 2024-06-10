@@ -1,0 +1,15 @@
+.Bartwo{
+    overflow: hidden;
+    width:85%;
+    height:250px;
+    margin: auto;
+   margin-top:0 !important;
+  
+    img{
+      width:150px;
+      height:110px;
+object-fit: contain;
+
+     
+    }
+  }

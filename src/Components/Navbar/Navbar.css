@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.firstnav {color:rgb(85, 82, 82) !important;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+  font-size: 10px !important;
+ 
+  z-index: 99 !important;
+  position: relative;
+  padding-bottom: 5px;
+  /* position: fixed; */
+
+ 
+
+
+  }
+  .select{
+
+ button{
+  padding: 0!important;
+  border-color:transparent!important;
+  z-index: 99;
+ 
+}
+}
+
+.css-13cymwt-control{z-index: 99 !important;
+  position: relative;
+  cursor: pointer !important;
+  z-index:10 !important;
+  border: none !important;
+
+  font-size: 10px !important;
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7:after {
+     border-top: 5px solid #c2b2b2 !important;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 0;
+  
+}
+  .ReactFlagsSelect-module_selectBtn__19wW7 {
+    width:90%  !important;
+    border: none !important;
+    color: #494747 !important;
+
+
+    span{
+      font-size: 12px !important;
+      color: #919191 !important;
+    }
+   }
+
+
+.firstpart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1vw;
+
+
+  
+
+ 
+  button{
+   
+  margin-left:1vw;
+  margin-top: 4px;
+  }
+
+}
+option{
+  border-color: #ece7e7;
+}
+.links {
+  display: flex;
+  width: 30%;
+  gap: 2.5vw;
+  font-size: 10px;
+  justify-content: space-around;
+  align-items: center;
+ 
+  a {
+    color: #7c7c7c;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: #ff324d;
+    }
+  }
+  .select{
+    width: 9px;
+    height: 10vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column !important;
+    cursor: pointer;
+  }
+}
+
+.phoneNum{display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8a8a8a;
+.secondpart{
+
+        color: #585656;
+        font-size: 17px;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+  .firstnav{
+    display: flex;
+ 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    padding-bottom: 12px;
+  }
+
+  .links{
+    width: 50%;
+  }
+}

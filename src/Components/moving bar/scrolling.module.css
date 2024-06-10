@@ -1,0 +1,76 @@
+.Bar{
+  overflow: hidden;
+  height:100%;
+  width: 100%;
+  margin: 10vh 0 3vh 0;
+  position: relative;
+  margin-bottom: 0 ;
+
+  img{
+    width:100% ;
+    height: 150px;
+
+    &:hover{
+        transform: scale(1.03);
+      }
+  }
+  .followbox{
+    position: absolute;
+    border-radius: 15px;
+    color: rgb(250, 245, 245);
+    top:0;
+    left:45%;
+    z-index:1;
+
+.box{
+  position: relative;
+  width:50px;
+  height: 100px;
+  
+
+svg{position: absolute;
+z-index:2;
+top:10px;
+left: 80px;
+color: rgb(2, 2, 2);
+font-size: 5rem;
+padding-bottom: 2px;
+    }
+
+    h3{position: absolute;
+      z-index:3 ;
+      top:30px;
+      text-transform: capitalize;
+      left: 65px;
+      margin: auto;
+      font-size: 1.5rem;
+      text-align: center;
+      transition: 2s;
+
+    }
+    span{position: absolute;
+      z-index:3 ;
+      margin: auto;
+      color: rgb(255, 255, 255);
+      bottom: 0;
+      left: 80px;
+      font-size: 12px;
+
+
+     
+    }
+    h3{
+      font-weight: 700;
+    }
+  }
+
+}
+}
+
+ @media only screen and (max-width:1024px) {
+
+  .scrolling_followbox__nuYKM {
+left:20%;
+}
+} 
+
