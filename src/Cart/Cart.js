@@ -38,7 +38,7 @@ setproducts(cartproducts)
         <div className={styling.cardinfo}>
           <h4 className={styling.texttitle}>{el.title}</h4>
           <p className={styling.category}>{el.category}</p>
-          <div className={styling.star}><FaStar className='s' /><FaStar /><FaStar /><FaRegStar /></div>
+          <div className={styling.star}><FaStar className={styling.s} /><FaStar /><FaStar /><FaRegStar /></div>
           <div className={styling.span}>
             <span>price:${el.price}</span>
           </div>

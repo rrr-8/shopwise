@@ -43,7 +43,7 @@ const Products = () => {
                 </div>
                 <span>price:${el.price}</span>
               </div>
-              <div className="icons">
+              <div className={styling.icons}>
                 <button
                   onClick={() => dispatch(productSlice.actions.addToCart(el))}
                   className={styling.btn}
