@@ -124,15 +124,11 @@
     }
     .icons {
       transition: 0.8s;
-   
       justify-content: space-evenly;
-      display: none;
-      &:hover{
-        display: flex;
+      display: flex;
         justify-content: center;
         align-items: center;
-        
-      }
+    
       
       .btn {
       
@@ -178,7 +174,7 @@
       font-size: 1.5rem;
       &:hover {
         color: red;
-        transform: scale(1.4);
+        transform: scale(1.1);
       }
     }
     .span {
