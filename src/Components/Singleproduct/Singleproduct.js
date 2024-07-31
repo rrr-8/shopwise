@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import '../products/products.css'
+import styling from '../products/products.module.css'
 import axios from "axios";
 import ScrollToTop from "react-scroll-to-top";
 const Singleproduct = () => {
@@ -19,17 +19,17 @@ const Singleproduct = () => {
   return (
     <>
     <ScrollToTop smooth color="#6f00ff" />
-      <section className="container">
-        <div className="productscontainer">
+      <section className={styling.container}>
+        <div className={styling.productscontainer}>
           {
-            <div className="singleproduct-card">
-              <div className="image">
-                <img src={singleproduct.image} alt="" className="content" />
+            <div className={styling.singleproductcard}>
+              <div className={styling.image}>
+                <img src={singleproduct.image} alt="" className={styling.content} />
               </div>
-              <div className="cardinfo">
-                <h4 className="texttitle">{singleproduct.title}</h4>
-                <p className="text">{singleproduct.description}</p>
-                <div className="span">
+              <div className={styling.cardinfo}>
+                <h4 className={styling.texttitle}>{singleproduct.title}</h4>
+                <p className={styling.text}>{singleproduct.description}</p>
+                <div className={styling.span}>
                   <span>price:${singleproduct.price}</span>
                 </div>
               </div>

@@ -243,7 +243,7 @@ h3 {
 Link {
   cursor: pointer;
 }
-.singleproduct-card {
+.singleproductcard {
   position: relative;
   display: flex;
   flex-direction: column;
