@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react'
-import '../Components/products/products.css'
+import styling from '../Components/products/products.module.css'
 import { FaCartPlus } from "react-icons/fa";
 import { useDispatch, useSelector } from 'react-redux';
 import { FaTrashAlt } from "react-icons/fa";
@@ -26,23 +26,23 @@ setproducts(cartproducts)
 
 },[cartproducts,dispatch])
   return (
-    <section className="container">
-   <h3 className='cart-h3'>total cost :<span> {totalprice}</span></h3>
+    <section className={styling.container}>
+   <h3 className={styling.carth3}>total cost :<span> {totalprice}</span></h3>
 
-     <div className="productscontainer">
+     <div className={styling.productscontainer}>
        {products?.map((el, idx) => (
-      <div className="card" key={idx}>
-        <div className="image">
-          <img src={el.image} alt="" className="content" />
+      <div className={styling.card} key={idx}>
+        <div className={styling.image}>
+          <img src={el.image} alt="" className={styling.content} />
         </div>
-        <div className="cardinfo">
-          <h4 className="texttitle">{el.title}</h4>
-          <p className="category">{el.category}</p>
-          <div className='star'><FaStar className='s' /><FaStar /><FaStar /><FaRegStar /></div>
-          <div className="span">
+        <div className={styling.cardinfo}>
+          <h4 className={styling.texttitle}>{el.title}</h4>
+          <p className={styling.category}>{el.category}</p>
+          <div className={styling.star}><FaStar className='s' /><FaStar /><FaStar /><FaRegStar /></div>
+          <div className={styling.span}>
             <span>price:${el.price}</span>
           </div>
-          <div className="icons">
+          <div className={styling.icons}>
           <button onClick={()=>dispatch(productSlice.actions.removefromcart(el))}><FaTrashAlt /></button>
       
           </div>
