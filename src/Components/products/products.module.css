@@ -127,6 +127,12 @@
    
       justify-content: space-evenly;
       display: none;
+      &:hover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
       
       .btn {
       
