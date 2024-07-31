@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./products.css";
+import styling from "./products.module.css";
 import axios from "axios";
 import { FaCartPlus } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa";
@@ -22,20 +22,20 @@ const Products = () => {
   });
 
   return (
-    <section className="container">
+    <section className={styling.container}>
       <h3>products</h3>
 
-      <div className="productscontainer">
+      <div className={styling.productscontainer}>
         {products?.map((el, idx) => (
-          <div className="card" key={idx}>
-            <div className="image">
-              <img src={el.image} alt="" className="content" />
+          <div className={styling.card} key={idx}>
+            <div className={styling.image}>
+              <img src={el.image} alt="" className={styling.content} />
             </div>
-            <div className="cardinfo">
-              <p className="texttitle">{el.title}</p>
-              <h4 className="category">{el.category}</h4>
-              <div className="span">
-                <div className="star ">
+            <div className={styling.cardinfo}>
+              <p className={styling.texttitle}>{el.title}</p>
+              <h4 className={styling.category}>{el.category}</h4>
+              <div className={styling.span}>
+                <div className={styling.star}>
                   <FaStar />
                   <FaStar />
                   <FaStar />
@@ -46,7 +46,7 @@ const Products = () => {
               <div className="icons">
                 <button
                   onClick={() => dispatch(productSlice.actions.addToCart(el))}
-                  className="btn"
+                  className={styling.btn}
                 >
                   <FaCartPlus />
                   add to cart
@@ -54,7 +54,7 @@ const Products = () => {
 
                 <Link to={`/products/${el.id}`}>
                   <div>
-                    <button className="btn">
+                    <button className={styling.btn}>
                       <FaRegEye />
                       read more
                     </button>
