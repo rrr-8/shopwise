@@ -122,12 +122,12 @@
       position: absolute;
       background-color: yellow;
     }
-    .icons {
+    .icons { 
       transition: 0.8s;
-      justify-content: space-evenly;
       display: flex;
         justify-content: center;
         align-items: center;
+        height: 12vh;
     
       
       .btn {
@@ -137,7 +137,6 @@
         align-items: center;
         gap: 10px;
         background: rgb(173, 224, 31);
-
         border-radius: 7px;
         font-family: "poppins";
         color: black;
